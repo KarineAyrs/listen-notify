@@ -28,7 +28,7 @@ BEGIN
 END;
 $trigger$ LANGUAGE 'plpgsql';
 
-CREATE TRIGGER subscriptions_notify
+CREATE TRIGGER users_notify
     AFTER INSERT OR UPDATE OR DELETE
     ON users
     FOR EACH ROW
